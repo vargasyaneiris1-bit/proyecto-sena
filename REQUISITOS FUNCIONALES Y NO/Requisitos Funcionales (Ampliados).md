@@ -2,10 +2,10 @@
 
 ## RF-001: GESTIÓN DE COTIZACIONES EN LÍNEA
 **RF-001.1: Creación de Cotización por el Cliente**
-* **Descripción:** El sistema debe permitir que el cliente realice su cotización directamente desde la página web sin necesidad de contacto físico con el jefe.
-* **Actor:** Cliente externo
-* **Precondiciones:** Cliente tiene acceso a la página web
-* **Flujo Principal:**
+**Descripción:** El sistema debe permitir que el cliente realice su cotización directamente desde la página web sin necesidad de contacto físico con el jefe.
+**Actor:** Cliente externo
+**Precondiciones:** Cliente tiene acceso a la página web
+**Flujo Principal:**
 
 1\. Cliente accede a la página web de Casetech  
 2\. Sistema presenta formulario de cotización  
@@ -13,10 +13,10 @@
 4\. Sistema calcula precio automáticamente  
 5\. Sistema genera cotización y la envía al cliente por correo
 * **Criterios de Aceptación:**
-    - Cotización generada sin intervención del jefe
-    - Confirmación enviada al cliente en menos de 5 minutos
-    - Cotización guardada en el sistema
-* **Prioridad:** MUST (Crítico)
+- Cotización generada sin intervención del jefe
+- Confirmación enviada al cliente en menos de 5 minutos
+- Cotización guardada en el sistema
+**Prioridad:** MUST (Crítico)
 
 ---
 
