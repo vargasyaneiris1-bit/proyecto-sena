@@ -1,4 +1,4 @@
-# REQUISITOS FUNCIONALES - CASETECH
+# REQUISITOS FUNCIONALES 
 
 ---
 
@@ -12,15 +12,13 @@
 
 **Precondiciones:** Cliente tiene acceso a la página web  
 
-**Flujo Principal:** 
-1\. Cliente accede a la página web de Casetech  
+**Flujo Principal:** 1\. Cliente accede a la página web de Casetech  
 2\. Sistema presenta formulario de cotización  
 3\. Cliente ingresa tipo de material, cantidad y datos de contacto  
 4\. Sistema calcula precio automáticamente  
 5\. Sistema genera cotización y la envía al cliente por correo  
 
-**Criterios de Aceptación:** 
-* Cotización generada sin intervención del jefe.  
+**Criterios de Aceptación:** * Cotización generada sin intervención del jefe.  
 * Confirmación enviada al cliente en menos de 5 minutos.  
 * Cotización guardada en el sistema.  
 
@@ -38,13 +36,11 @@
 
 **Precondiciones:** El cliente tiene un pedido activo.  
 
-**Flujo Principal:** 
-1\. El cliente ingresa su número de pedido en la página web.  
-2\. Sistema muestra el estado actual: en producción, alistamiento o entrega.  
-3\. Sistema muestra fecha estimada de entrega.  
+**Flujo Principal:** 6\. El cliente ingresa su número de pedido en la página web.  
+7\. Sistema muestra el estado actual: en producción, alistamiento o entrega.  
+8\. Sistema muestra fecha estimada de entrega.  
 
-**Criterios de Aceptación:** 
-* Estados visibles en tiempo real.  
+**Criterios de Aceptación:** * Estados visibles en tiempo real.  
 * Notificación automática al cliente cuando cambia el estado.  
 
 **Prioridad:** MUST (Crítico)
@@ -61,13 +57,11 @@
 
 **Precondiciones:** Usuario operario autenticado en el sistema.  
 
-**Flujo Principal:** 
-1\. Operario registra entrada o salida de material.  
-2\. El sistema actualiza el inventario automáticamente.  
-3\. Sistema genera alerta si el stock baja del mínimo establecido.  
+**Flujo Principal:** 9\. Operario registra entrada o salida de material.  
+10\. El sistema actualiza el inventario automáticamente.  
+11\. Sistema genera alerta si el stock baja del mínimo establecido.  
 
-**Criterios de Aceptación:** 
-* Inventario actualizado en tiempo real.  
+**Criterios de Aceptación:** * Inventario actualizado en tiempo real.  
 * Historial de movimientos consultables.  
 * Alertas automáticas de bajo inventario.  
 
@@ -85,14 +79,12 @@
 
 **Precondiciones:** Inventario actualizado en el sistema.  
 
-**Flujo Principal:** 
-1\. Sistema detecta material con stock bajo o agotado.  
-2\. El sistema envía alerta automática al cliente.  
-3\. Sistema muestra lista de proveedores sugeridos con precio y calidad.  
-4\. Cliente selecciona proveedor de su preferencia.  
+**Flujo Principal:** 12\. Sistema detecta material con stock bajo o agotado.  
+13\. El sistema envía alerta automática al cliente.  
+14\. Sistema muestra lista de proveedores sugeridos con precio y calidad.  
+15\. Cliente selecciona proveedor de su preferencia.  
 
-**Criterios de Aceptación:** 
-* Alerta enviada en tiempo real.  
+**Criterios de Aceptación:** * Alerta enviada en tiempo real.  
 * Mínimo 3 opciones de proveedores sugeridas.  
 * Proveedores ordenados por precio y calidad.  
 
@@ -110,13 +102,11 @@
 
 **Precondiciones:** Usuario registrado en el sistema.  
 
-**Flujo Principal:** 
-1\. Usuario ingresa correo y contraseña.  
-2\. Sistema valida credenciales.  
-3\. Sistema redirige al módulo correspondiente según rol: admin, operario o cliente.  
+**Flujo Principal:** 16\. Usuario ingresa correo y contraseña.  
+17\. Sistema valida credenciales.  
+18\. Sistema redirige al módulo correspondiente según rol: admin, operario o cliente.  
 
-**Criterios de Aceptación:** 
-* Roles diferenciados con permisos distintos.  
+**Criterios de Aceptación:** * Roles diferenciados con permisos distintos.  
 * Bloqueo automático tras 5 intentos fallidos.  
 * Sesión cerrada automáticamente tras 30 minutos de inactividad.  
 
@@ -134,14 +124,12 @@
 
 **Precondiciones:** Cotización aprobada por el cliente.  
 
-**Flujo Principal:** 
-1\. Operario crea pedido a partir de cotización aprobada.  
-2\. Sistema asigna número único al pedido.  
-3\. Operario actualiza estado: producción, alistamiento, entrega.  
-4\. Sistema notifica al cliente en cada cambio de estado.  
+**Flujo Principal:** 19\. Operario crea pedido a partir de cotización aprobada.  
+20\. Sistema asigna número único al pedido.  
+21\. Operario actualiza estado: producción, alistamiento, entrega.  
+22\. Sistema notifica al cliente en cada cambio de estado.  
 
-**Criterios de Aceptación:** 
-* Número de pedido único y rastreable.  
+**Criterios de Aceptación:** * Número de pedido único y rastreable.  
 * Notificaciones automáticas al cliente.  
 * Historia completa de estados del pedido.  
 
@@ -159,13 +147,11 @@
 
 **Precondiciones:** Datos registrados en el sistema.  
 
-**Flujo Principal:** 
-1\. El administrador selecciona el tipo de informe y el rango de fechas.  
-2\. El sistema genera informes con los datos solicitados.  
-3\. El sistema permite exportar en PDF o Excel.  
+**Flujo Principal:** 23\. El administrador selecciona el tipo de informe y el rango de fechas.  
+24\. El sistema genera informes con los datos solicitados.  
+25\. El sistema permite exportar en PDF o Excel.  
 
-**Criterios de Aceptación:** 
-* Informes exportables en PDF y Excel.  
+**Criterios de Aceptación:** * Informes exportables en PDF y Excel.  
 * Generación del informe en menos de 3 segundos.  
 * Datos actualizados en tiempo real.  
 
@@ -183,14 +169,12 @@
 
 **Precondiciones:** Administrador autenticado en el sistema.  
 
-**Flujo Principal:** 
-1\. Administrador accede al módulo de proveedores.  
-2\. Sistema presenta formulario para agregar o editar proveedor.  
-3\. Administrador ingresa nombre, contacto, materiales y precio.  
-4\. Sistema guarda la información para sugerencias automáticas.  
+**Flujo Principal:** 26\. Administrador accede al módulo de proveedores.  
+27\. Sistema presenta formulario para agregar o editar proveedor.  
+28\. Administrador ingresa nombre, contacto, materiales y precio.  
+29\. Sistema guarda la información para sugerencias automáticas.  
 
-**Criterios de Aceptación:** 
-* Proveedores consultables desde el módulo de bodega.  
+**Criterios de Aceptación:** * Proveedores consultables desde el módulo de bodega.  
 * Información actualizable en cualquier momento.  
 * Proveedor asociado a los materiales que suministra.  
 
@@ -208,13 +192,11 @@
 
 **Precondiciones:** Administrador autenticado en el sistema.  
 
-**Flujo Principal:** 
-1\. Administrador accede al panel principal.  
-2\. Sistema muestra resumen de pedidos activos e inventario.  
-3\. Administrador puede acceder a cada módulo desde el panel.  
+**Flujo Principal:** 30\. Administrador accede al panel principal.  
+31\. Sistema muestra resumen de pedidos activos e inventario.  
+32\. Administrador puede acceder a cada módulo desde el panel.  
 
-**Criterios de Aceptación:** 
-* Información actualizada en tiempo real.  
+**Criterios de Aceptación:** * Información actualizada en tiempo real.  
 * Acceso a todos los módulos en máximo 2 clics.  
 * Resumen visual claro y fácil de interpretar.  
 
@@ -232,14 +214,12 @@
 
 **Precondiciones:** Cliente con pedido activo y correo registrado.  
 
-**Flujo Principal:** 
-1\. Sistema detecta cambio de estado en un pedido.  
-2\. Sistema genera correo automático con el nuevo estado.  
-3\. Sistema envía notificación al correo del cliente.  
-4\. Sistema registra el envío en el historial del pedido.  
+**Flujo Principal:** 33\. Sistema detecta cambio de estado en un pedido.  
+34\. Sistema genera correo automático con el nuevo estado.  
+35\. Sistema envía notificación al correo del cliente.  
+36\. Sistema registra el envío en el historial del pedido.  
 
-**Criterios de Aceptación:** 
-* Notificación enviada en menos de 2 minutos tras el cambio.  
+**Criterios de Aceptación:** * Notificación enviada en menos de 2 minutos tras el cambio.  
 * Correo con información clara del estado y número de pedido.  
 * Registro de todas las notificaciones enviadas.  
 
@@ -257,14 +237,12 @@
 
 **Precondiciones:** Cliente autenticado con cotizaciones registradas.  
 
-**Flujo Principal:** 
-1\. Cliente accede a su perfil en la página web.  
-2\. Sistema muestra listado de cotizaciones anteriores.  
-3\. El cliente selecciona una cotización para ver detalle.  
-4\. Sistema muestra materiales, cantidades, precio y fecha.  
+**Flujo Principal:** 37\. Cliente accede a su perfil en la página web.  
+38\. Sistema muestra listado de cotizaciones anteriores.  
+39\. El cliente selecciona una cotización para ver detalle.  
+40\. Sistema muestra materiales, cantidades, precio y fecha.  
 
-**Criterios de Aceptación:** 
-* Historial disponible desde el perfil del cliente.  
+**Criterios de Aceptación:** * Historial disponible desde el perfil del cliente.  
 * Cotizaciones ordenadas por fecha más reciente.  
 * Opción de repetir una cotización anterior.  
 
@@ -282,15 +260,13 @@
 
 **Precondiciones:** Usuario con correo electrónico registrado en el sistema.  
 
-**Flujo Principal:** 
-1\. El usuario selecciona la opción de "olvidé mi contraseña".  
-2\. Sistema solicita correo electrónico registrado.  
-3\. Sistema envía enlace de restablecimiento al correo.  
-4\. Usuario ingresa nueva contraseña.  
-5\. Sistema actualiza contraseña y redirige al inicio de sesión.  
+**Flujo Principal:** 41\. El usuario selecciona la opción de "olvidé mi contraseña".  
+42\. Sistema solicita correo electrónico registrado.  
+43\. Sistema envía enlace de restablecimiento al correo.  
+44\. Usuario ingresa nueva contraseña.  
+45\. Sistema actualiza contraseña y redirige al inicio de sesión.  
 
-**Criterios de Aceptación:** 
-* Enlace de restablecimiento válido por máximo 30 minutos.  
+**Criterios de Aceptación:** * Enlace de restablecimiento válido por máximo 30 minutos.  
 * Confirmación de cambio exitoso por correo.  
 * Nueva contraseña debe cumplir mínimo 8 caracteres.  
 
