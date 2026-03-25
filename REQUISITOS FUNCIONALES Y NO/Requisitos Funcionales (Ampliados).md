@@ -1,8 +1,8 @@
 # **REQUISITOS FUNCIONALES**
 
 ## RF-001: GESTIÓN DE COTIZACIONES EN LÍNEA
-**RF-001.1: Creación de Cotización por el Cliente**
-**Descripción:** El sistema debe permitir que el cliente realice su cotización directamente desde la página web sin necesidad de contacto físico con el jefe.
+### **RF-001.1: Creación de Cotización por el Cliente**
+* **Descripción:** El sistema debe permitir que el cliente realice su cotización directamente desde la página web sin necesidad de contacto físico con el jefe.
 **Actor:** Cliente externo
 **Precondiciones:** Cliente tiene acceso a la página web
 **Flujo Principal:**
@@ -12,26 +12,27 @@
 3\. Cliente ingresa tipo de material, cantidad y datos de contacto  
 4\. Sistema calcula precio automáticamente  
 5\. Sistema genera cotización y la envía al cliente por correo
-* **Criterios de Aceptación:**
+**Criterios de Aceptación:**
 - Cotización generada sin intervención del jefe
 - Confirmación enviada al cliente en menos de 5 minutos
 - Cotización guardada en el sistema
-**Prioridad:** MUST (Crítico)
+* **Prioridad:** MUST (Crítico)
 
 ---
 
 ## RF-002: SEGUIMIENTO DE PEDIDOS
-**RF-002.1: Consulta de Estado del Pedido**
+### **RF-002.1: Consulta de Estado del Pedido**
 * **Descripción:** El sistema debe permitir al cliente consultar en qué etapa se encuentra su material.
-* **Actor:** Cliente externo
-* **Precondiciones:** Cliente tiene un pedido activo.
-* **Flujo Principal:**
-    1. Cliente ingresa su número de pedido en la página web.
-    2. Sistema muestra el estado actual: en producción, alistamiento o entrega.
-    3. Sistema muestra fecha estimada de entrega.
-* **Criterios de Aceptación:**
-    * Estados visibles en tiempo real.
-    * Notificación automática al cliente cuando cambia el estado.
+**Actor:** Cliente externo
+**Precondiciones:** Cliente tiene un pedido activo.
+**Flujo Principal:**
+
+1\. Cliente ingresa su número de pedido en la página web.
+2\. Sistema muestra el estado actual: en producción, alistamiento o entrega.
+3\. Sistema muestra fecha estimada de entrega.
+**Criterios de Aceptación:**
+- Estados visibles en tiempo real.
+- Notificación automática al cliente cuando cambia el estado.
 * **Prioridad:** MUST (Crítico)
 
 ---
@@ -39,16 +40,16 @@
 ## RF-003: GESTIÓN DE BODEGA
 **RF-003.1: Registro de Entrada y Salida de Material**
 * **Descripción:** El sistema debe registrar automáticamente los movimientos de inventario en bodega.
-* **Actor:** Operario de bodega
-* **Precondiciones:** Usuario operario autenticado en el sistema.
-* **Flujo Principal:**
-    1. Operario registra entrada o salida de material.
-    2. Sistema actualiza inventario automáticamente.
-    3. Sistema genera alerta si el stock baja del mínimo establecido.
-* **Criterios de Aceptación:**
-    * Inventario actualizado en tiempo real.
-    * Historial de movimientos consultable.
-    * Alertas automáticas de bajo inventario.
+**Actor:** Operario de bodega
+**Precondiciones:** Usuario operario autenticado en el sistema.
+**Flujo Principal:**
+1\. Operario registra entrada o salida de material.
+2\. Sistema actualiza inventario automáticamente.
+3\. Sistema genera alerta si el stock baja del mínimo establecido.
+**Criterios de Aceptación:**
+- Inventario actualizado en tiempo real.
+- Historial de movimientos consultable.
+- Alertas automáticas de bajo inventario.
 * **Prioridad:** MUST (Crítico)
 
 ---
