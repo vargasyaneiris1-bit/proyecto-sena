@@ -1,178 +1,188 @@
-# Requisitos Funcionales (Ampliados)
-
----
-
-## RF-00: GESTIÓN DE INVENTARIO
-
-### RF-00.0: Consulta y Búsqueda de Inventario
-
-El sistema debe permitir consultar y buscar productos en inventario usando filtros (categoría, ubicación, lote, fecha de vencimiento) o mediante código de barras, SKU o nombre, mostrando niveles actuales, mínimos y máximos de stock.
-
-### RF-00.1: Registro y Trazabilidad de Movimientos
-
-El sistema debe registrar automáticamente entradas y salidas de inventario, validando transacciones contra pedidos y órdenes de compra, manteniendo trazabilidad completa de todos los movimientos.
-
-### RF-00.2: Ajustes y Control de Descuadres
-
-El sistema debe permitir ajustes manuales de inventario con justificación y aprobación por niveles jerárquicos, detectar automáticamente discrepancias y generar informes de diferencias con registro de causas y responsables.
-
----
-
-## RF-01: GESTIÓN DE PROVEEDORES
-
-### RF-01.0: Registro y Administración de Proveedores
-
-El sistema debe permitir registrar, actualizar, clasificar y consultar proveedores con datos completos (razón social, contacto, condiciones comerciales, productos suministrados), manteniendo base de datos centralizada con historial completo.
-
-### RF-01.1: Evaluación y Ranking de Proveedores
-
-El sistema debe calcular automáticamente indicadores de desempeño (calidad, cumplimiento, precios), generar ranking basado en criterios configurables y mantener historial de evaluaciones con referencias comerciales.
-
-### RF-01.2: Historial de Interacciones con Proveedores
-
-El sistema debe registrar todas las comunicaciones, cotizaciones recibidas, reclamos, acuerdos comerciales, mantener histórico de precios y almacenar documentos relacionados (contratos, certificados).
-
----
-
-## RF-02: GESTIÓN DE COTIZACIONES
-
-### RF-02.0: Solicitud, Comparación y Aprobación de Cotizaciones**
-
-El sistema debe permitir enviar solicitudes de cotización a proveedores, registrar cotizaciones recibidas, comparar múltiples opciones por precio y condiciones, aprobar/rechazar con justificación y convertir cotizaciones aprobadas en órdenes de compra.
-
-### RF-02.1: Generación Automática de Cotizaciones
-
-El sistema debe generar cotizaciones automáticas basadas en histórico de precios y proveedores preferidos para agilizar el proceso de compra.
-
----
-
-##  RF-03: GESTIÓN DE SOLICITUDES DE COMPRA
-
-### RF-03.0: Creación, Aprobación y Consolidación de Solicitudes
-
-El sistema debe permitir que departamentos generen solicitudes de compra con flujo de aprobación configurable según tipo y monto, consolidar solicitudes similares para optimizar compras y consultar el estado de cada solicitud.
-
----
-
-## RF-04: GESTIÓN DE ÓRDENES DE COMPRA
-
-### RF-04.0: Creación y Generación Automática de OC
-
-El sistema debe permitir crear órdenes de compra manualmente desde solicitudes aprobadas o generarlas automáticamente al alcanzar puntos de reordenamiento, con selección de proveedor, especificación de productos y cálculo automático de totales.
-
-### RF-04.1: Aprobación, Envío y Seguimiento de OC
-
-El sistema debe requerir aprobación por niveles jerárquicos según montos, enviar OC aprobadas a proveedores vía email y permitir rastrear estado (pendiente, aprobada, enviada, recibida parcial/total, cancelada) con opción de modificar o cancelar con justificación.
-
-### RF-04.2: Recepción y Validación de Mercancías
-
-El sistema debe permitir registrar recepciones parciales o totales de órdenes de compra, validar automáticamente mercancías recibidas contra OC original, cerrar órdenes completadas y actualizar inventario.
-
----
-
-## RF-05: GESTIÓN DE MATERIAS PRIMAS
-
-### RF-05.0: Control y Reabastecimiento Automático de Materias Primas
-
-El sistema debe generar alertas tempranas cuando materias primas alcancen niveles críticos, calcular necesidades futuras basadas en producción planificada y activar reabastecimiento automático según consumo histórico y proyecciones.
-
----
-
-##  RF-06: SISTEMA DE ALERTAS Y NOTIFICACIONES
-
-### RF-06.0: Generación y Envío de Alertas Automáticas
-
-El sistema debe generar alertas automáticas (stock mínimo, pedidos urgentes, productos por vencer, descuadres, OC pendientes), permitir configuración de preferencias por usuario y enviarlas por múltiples canales (email, SMS, notificación en aplicación) en tiempo real.
-
----
-
-##  RF-07: GESTIÓN DE ENTREGAS Y DESPACHOS
-
-### RF-07.0: Programación y Gestión de Entregas
-
-El sistema debe permitir registrar, programar y reprogramar entregas a clientes con fechas y horarios específicos, generar hojas de ruta optimizadas y gestionar excepciones (retrasos, rechazos, devoluciones).
-
----
-
-##  RF-08: RASTREO Y LOGÍSTICA
-
-### RF-08.0: Rastreo en Tiempo Real y Notificación a Clientes
-
-El sistema debe permitir rastrear ubicación y estado de envíos en tiempo real, registrar eventos durante transporte (salida, llegada, incidencias) y notificar automáticamente a clientes sobre cambios en sus pedidos.
-
-### RF-08.1: Optimización de Rutas de Entrega
-
-El sistema debe calcular rutas optimizadas considerando distancia, tráfico y prioridad, agrupando entregas por zona geográfica y ventanas horarias para reducir costos y tiempos.
-
-### RF-08.2: Confirmación Digital de Entregas
-
-El sistema debe permitir confirmar entregas digitalmente con captura de firma electrónica, fotografías y observaciones, actualizando automáticamente el inventario al confirmar la entrega.
-
----
-
-## RF-09: GESTIÓN DE ALMACENAMIENTO
-
-### RF-09.0: Administración Integral de Almacén
-
-El sistema debe asignar ubicaciones óptimas para productos según rotación y características, generar órdenes de recolección optimizadas (picking) para despachos, controlar capacidad disponible y mantener mapa visual del almacén.
-
----
-
-##  RF-10: REPORTES E INFORMES
-
-### RF-10.0: Informes de Inventario y Rotación
-
-El sistema debe generar informes de inventario (actual, histórico, proyectado) por producto, categoría o ubicación, análisis de rotación de productos e identificación de productos de baja rotación u obsoletos.
-
-### RF-10.1: Informes de Proveedores y Compras
-
-El sistema debe generar informes de desempeño de proveedores con indicadores clave (calidad, cumplimiento, precios), análisis de órdenes de compra y comparativas de precios históricos.
-
-### RF-10.2: Informes de Logística, Costos e Incidencias
-
-El sistema debe generar informes de costos de almacenamiento, transporte, distribución e informes de incidencias con sus resoluciones y tiempos de respuesta.
-
-### RF-10.3: Dashboard Ejecutivo y Análisis Predictivo
-
-El sistema debe proporcionar tablero ejecutivo con KPIs en tiempo real, vistas personalizables por rol, alertas críticas pendientes, análisis de tendencias de consumo y proyecciones de demanda futura.
-
----
-
-## RF-11: INTEGRACIONES
-
-### RF-11.0: Integración con Sistema Contable
-
-El sistema debe sincronizar automáticamente órdenes de compra, costos de inventario, datos de proveedores y pagos con el sistema contable, validando consistencia de datos financieros entre ambos sistemas.
-
-### RF-11.1: Integración con Sistema de Producción
-
-El sistema debe recibir automáticamente requerimientos de materiales desde producción, notificar disponibilidad de materias primas al área de producción y actualizar consumos en inventario automáticamente.
-
----
-
-##  RF-12: GESTIÓN DE USUARIOS Y SEGURIDAD
-
-### RF-12.0: Administración de Usuarios, Roles y Permisos
-
-El sistema debe permitir registrar usuarios, asignar roles (Gerente de Compras, Gerente de Logística, Almacenista, Comprador, Auditor), configurar permisos granulares por módulo y función, y desactivar/activar cuentas de usuario.
-
-### RF-12.1: Control de Acceso, Autenticación y Sesiones
-
-El sistema debe implementar control de acceso basado en roles (RBAC), autenticación segura mediante usuario y contraseña, control de sesiones concurrentes y bloqueo optimista para evitar conflictos de edición simultánea.
-
-### RF-12.2: Auditoría y Trazabilidad del Sistema
-
-El sistema debe registrar automáticamente todas las acciones de usuarios (quién, qué, cuándo, desde dónde), permitir consultar y filtrar bitácora de auditoría, mantener historial de cambios en datos críticos (inventario, precios, OC) y exportar registros para análisis externos.
-
----
-
-##  RF-13: ATENCIÓN AL CLIENTE
-
-### RF-13.0: Consulta de Pedidos, Disponibilidad y Promesas de Entrega
-
-El sistema debe permitir consultar estado de pedidos de clientes en tiempo real, disponibilidad de productos para nuevos pedidos y calcular automáticamente fechas estimadas de entrega (promesas de entrega).
-
-### RF-13.1: Gestión de Reclamos y Satisfacción del Cliente
-
-El sistema debe permitir registrar reclamos de clientes relacionados con entregas o productos, hacer seguimiento hasta resolución, registrar acciones tomadas y calcular indicadores de satisfacción del cliente basados en reclamos y cumplimiento de entregas.
-
+REQUISITOS FUNCIONALES 
+
+RF-001: GESTIÓN DE COTIZACIONES EN LÍNEA
+RF-001.1: Creación de Cotización por el Cliente
+Descripción: El sistema debe permitir que el cliente realice su cotización directamente desde la página web sin necesidad de contacto físico con el jefe.
+Actor: Cliente externo
+Precondiciones: Cliente tiene acceso a la página web
+Flujo Principal:
+1.Cliente accede a la página web de Casetech
+2.Sistema presenta formulario de cotización
+3.Cliente ingresa tipo de material, cantidad y datos de contacto
+4.Sistema calcula precio automáticamente
+5.Sistema genera cotización y la envía al cliente por correo
+Criterios de Aceptación:
+-Cotización generada sin intervención del jefe
+-Confirmación enviada al cliente en menos de 5 minutos
+-Cotización guardada en el sistema
+Prioridad: MUST (Crítico)
+
+RF-002: SEGUIMIENTO DE PEDIDOS
+RF-002.1: Consulta de Estado del Pedido
+Descripción: El sistema debe permitir al cliente consultar en qué etapa se encuentra su material.
+Actor: Cliente externo
+Precondiciones: Cliente tiene un pedido activo
+Flujo Principal:
+6.Cliente ingresa su número de pedido en la página web
+7.Sistema muestra el estado actual: en producción, alistamiento o entrega
+8.Sistema muestra fecha estimada de entrega
+Criterios de Aceptación:
+-Estados visibles en tiempo real
+-Notificación automática al cliente cuando cambia el estado
+Prioridad: MUST (Crítico)
+
+RF-003: GESTIÓN DE BODEGA
+RF-003.1: Registro de Entrada y Salida de Material
+Descripción: El sistema debe registrar automáticamente los movimientos de inventario en bodega.
+Actor: Operario de bodega
+Precondiciones: Usuario operario autenticado en el sistema
+Flujo Principal:
+9.Operario registra entrada o salida de material
+10.Sistema actualiza inventario automáticamente
+11.Sistema genera alerta si el stock baja del mínimo establecido
+Criterios de Aceptación:
+-Inventario actualizado en tiempo real
+-Historial de movimientos consultable
+-Alertas automáticas de bajo inventario
+Prioridad: MUST (Crítico)
+
+RF-004: ALERTAS Y SUGERENCIA DE PROVEEDORES
+RF-004.1: Notificación de Material Agotado
+Descripción: El sistema debe notificar al cliente cuando un material no esté disponible y sugerir proveedores alternativos.
+Actor: Sistema automático
+Precondiciones: Inventario actualizado en el sistema
+Flujo Principal:
+12.Sistema detecta material con stock bajo o agotado
+13.Sistema envía alerta automática al cliente
+14.Sistema muestra lista de proveedores sugeridos con precio y calidad
+15.Cliente selecciona proveedor de su preferencia
+Criterios de Aceptación:
+-Alerta enviada en tiempo real
+-Mínimo 3 opciones de proveedores sugeridos
+-Proveedores ordenados por precio y calidad
+Prioridad: SHOULD (Importante)
+
+RF-005: AUTENTICACIÓN Y ROLES DE USUARIO
+RF-005.1: Registro e Inicio de Sesión
+Descripción: El sistema debe permitir a los usuarios autenticarse y acceder según su rol asignado.
+Actor: Administrador, operario, cliente
+Precondiciones: Usuario registrado en el sistema
+Flujo Principal:
+16.Usuario ingresa correo y contraseña
+17.Sistema valida credenciales
+18.Sistema redirige al módulo correspondiente según rol: admin, operario o cliente
+Criterios de Aceptación:
+-Roles diferenciados con permisos distintos
+-Bloqueo automático tras 5 intentos fallidos
+-Sesión cerrada automáticamente tras 30 minutos de inactividad
+Prioridad: MUST (Crítico)
+
+RF-006: GESTIÓN DE PEDIDOS
+RF-006.1: Registro y Actualización de Pedidos
+Descripción: El sistema debe registrar cada pedido y permitir actualizarlo a través de sus etapas.
+Actor: Operario / Administrador
+Precondiciones: Cotización aprobada por el cliente
+Flujo Principal:
+19.Operario crea pedido a partir de cotización aprobada
+20.Sistema asigna número único al pedido
+21.Operario actualiza estado: producción, alistamiento, entrega
+22.Sistema notifica al cliente en cada cambio de estado
+Criterios de Aceptación:
+-Número de pedido único y rastreable
+-Notificaciones automáticas al cliente
+-Historial completo de estados del pedido
+Prioridad: MUST (Crítico)
+RF-007: REPORTES Y ESTADÍSTICAS
+RF-007.1: Generación de Reportes para el Administrador
+Descripción: El sistema debe generar reportes de ventas, inventario y pedidos para el administrador.
+Actor: Administrador
+Precondiciones: Datos registrados en el sistema
+Flujo Principal:
+23.Administrador selecciona tipo de reporte y rango de fechas
+24.Sistema genera reporte con los datos solicitados
+25.Sistema permite exportar en PDF o Excel
+Criterios de Aceptación:
+-Reportes exportables en PDF y Excel
+-Generación del reporte en menos de 3 segundos
+-Datos actualizados en tiempo real
+Prioridad: SHOULD (Importante)
+
+RF-008: GESTIÓN DE PROVEEDORES
+RF-008.1: Registro y Consulta de Proveedores
+Descripción: El sistema debe permitir registrar, editar y consultar proveedores con información de precio y calidad.
+Actor: Administrador
+Precondiciones: Administrador autenticado en el sistema
+Flujo Principal:
+26.Administrador accede al módulo de proveedores
+27.Sistema presenta formulario para agregar o editar proveedor
+28.Administrador ingresa nombre, contacto, materiales que ofrece y precio
+29.Sistema guarda la información y la deja disponible para sugerencias automáticas
+Criterios de Aceptación:
+-Proveedores consultables desde el módulo de bodega
+-Información actualizable en cualquier momento
+-Proveedor asociado a los materiales que suministra
+Prioridad: SHOULD (Importante)
+
+RF-009: PANEL DE ADMINISTRACIÓN
+RF-009.1: Vista General para el Administrador
+Descripción: El sistema debe mostrar al administrador un resumen del estado actual de pedidos, inventario y cotizaciones.
+Actor: Administrador
+Precondiciones: Administrador autenticado en el sistema
+Flujo Principal:
+30.Administrador accede al panel principal
+31.Sistema muestra resumen de pedidos activos, inventario y cotizaciones pendientes
+32.Administrador puede acceder a cada módulo desde el panel
+Criterios de Aceptación:
+-Información actualizada en tiempo real
+-Acceso a todos los módulos en máximo 2 clics
+-Resumen visual claro y fácil de interpretar
+Prioridad: MUST (Crítico)
+
+RF-010: NOTIFICACIONES AL CLIENTE
+RF-010.1: Envío de Notificaciones por Correo Electrónico
+Descripción: El sistema debe enviar notificaciones automáticas al cliente sobre cambios en el estado de su pedido.
+Actor: Sistema automático
+Precondiciones: Cliente con pedido activo y correo registrado
+Flujo Principal:
+33.Sistema detecta cambio de estado en un pedido
+34.Sistema genera correo automático con el nuevo estado
+35.Sistema envía notificación al correo del cliente
+36.Sistema registra el envío en el historial del pedido
+Criterios de Aceptación:
+-Notificación enviada en menos de 2 minutos tras el cambio
+-Correo con información clara del estado y número de pedido
+-Registro de todas las notificaciones enviadas
+Prioridad: SHOULD (Importante)
+
+RF-011: HISTORIAL DE COTIZACIONES
+RF-011.1: Consulta de Cotizaciones Anteriores
+Descripción: El sistema debe permitir al cliente consultar el historial de sus cotizaciones previas.
+Actor: Cliente externo
+Precondiciones: Cliente autenticado con cotizaciones registradas
+Flujo Principal:
+37.Cliente accede a su perfil en la página web
+38.Sistema muestra listado de cotizaciones anteriores
+39.Cliente selecciona una cotización para ver detalle
+40.Sistema muestra materiales, cantidades, precio y fecha
+Criterios de Aceptación:
+-Historial disponible desde el perfil del cliente
+-Cotizaciones ordenadas por fecha más reciente
+-Opción de repetir una cotización anterior
+Prioridad: COULD (Deseable)
+
+RF-012: RECUPERACIÓN DE CONTRASEÑA
+RF-012.1: Restablecimiento de Contraseña
+Descripción: El sistema debe permitir a los usuarios recuperar el acceso a su cuenta en caso de olvidar su contraseña.
+Actor: Cualquier usuario registrado
+Precondiciones: Usuario con correo electrónico registrado en el sistema
+Flujo Principal:
+41.Usuario selecciona la opción de olvidé mi contraseña
+42.Sistema solicita correo electrónico registrado
+43.Sistema envía enlace de restablecimiento al correo
+44.Usuario ingresa nueva contraseña
+45.Sistema actualiza contraseña y redirige al inicio de sesión
+Criterios de Aceptación:
+-Enlace de restablecimiento válido por máximo 30 minutos
+-Confirmación de cambio exitoso por correo
+-Nueva contraseña debe cumplir mínimo 8 caracteres
+Prioridad: MUST (Crítico)
