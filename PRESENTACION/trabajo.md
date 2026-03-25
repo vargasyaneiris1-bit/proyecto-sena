@@ -16,22 +16,21 @@ Buscamos implementar un sistema integral de Gestión de la Cadena de Suministro 
 | Angelica | Arregoces Cortes |<img width="90" height="150" alt="image" src="assets/angelica.jpeg"> |
 
 # INDICE DE DOCUMENTACION
+
 ## REQUISITOS FUNCIONALES
 
-- [Ir a RF-00 GESTIÓN DE INVENTARIO](../REQUISITOS%20FUNCIONALES%20Y%20NO/Requisitos%20Funcionales%20(Ampliados).md#rf-00-gestión-de-inventario)
-- [Ir a RF-01 GESTIÓN DE PROVEEDORES](../REQUISITOS%20FUNCIONALES%20Y%20NO/Requisitos%20Funcionales%20(Ampliados).md#rf-01-gestión-de-proveedores)
-- [Ir a RF-02 GESTIÓN DE COTIZACIONES](../REQUISITOS%20FUNCIONALES%20Y%20NO/Requisitos%20Funcionales%20(Ampliados).md#rf-02-gestión-de-cotizaciones)
-- [Ir a RF-03 GESTIÓN DE SOLICITUDES DE COMPRA](../REQUISITOS%20FUNCIONALES%20Y%20NO/Requisitos%20Funcionales%20(Ampliados).md#rf-03-gestión-de-solicitudes-de-compra)
-- [Ir a RF-04 GESTIÓN DE ORDENES DE COMPRA](../REQUISITOS%20FUNCIONALES%20Y%20NO/Requisitos%20Funcionales%20(Ampliados).md#rf-04-gestión-de-órdenes-de-compra)
-- [Ir a RF-05 GESTIÓN DE MATERIAS PRIMAS](../REQUISITOS%20FUNCIONALES%20Y%20NO/Requisitos%20Funcionales%20(Ampliados).md#rf-05-gestión-de-materias-primas)
-- [Ir a RF-06 SISTEMAS DE ALERTAS Y NOTIFICACIONES](../REQUISITOS%20FUNCIONALES%20Y%20NO/Requisitos%20Funcionales%20(Ampliados).md#rf-06-sistema-de-alertas-y-notificaciones)
-- [Ir a RF-07 GESTIÓN DE ENTREGAS Y DESPACHOS](../REQUISITOS%20FUNCIONALES%20Y%20NO/Requisitos%20Funcionales%20(Ampliados).md#rf-07-gestión-de-entregas-y-despachos)
-- [Ir a RF-08 RASTREO Y LOGISTICA](../REQUISITOS%20FUNCIONALES%20Y%20NO/Requisitos%20Funcionales%20(Ampliados).md#rf-08-rastreo-y-logística)
-- [Ir a RF-09 GESTIÓN DE ALMACENAMIENTO](../REQUISITOS%20FUNCIONALES%20Y%20NO/Requisitos%20Funcionales%20(Ampliados).md#rf-09-gestión-de-almacenamiento)
-- [Ir a RF-10 REPORTES E INFORMES](../REQUISITOS%20FUNCIONALES%20Y%20NO/Requisitos%20Funcionales%20(Ampliados).md#rf-10-reportes-e-informes)
-- [Ir a RF-11 INTEGRACIONES](../REQUISITOS%20FUNCIONALES%20Y%20NO/Requisitos%20Funcionales%20(Ampliados).md#rf-11-integraciones)
-- [Ir a RF-12 GESTIÓN DE USUARIOS Y SEGURIDAD](../REQUISITOS%20FUNCIONALES%20Y%20NO/Requisitos%20Funcionales%20(Ampliados).md#rf-12-gestión-de-usuarios-y-seguridad)
-- [Ir a RF-13 ATENCIÓN AL CLIENTE](../REQUISITOS%20FUNCIONALES%20Y%20NO/Requisitos%20Funcionales%20(Ampliados).md#rf-13-atención-al-cliente)
+- [Ir a RF-001 GESTIÓN DE COTIZACIONES EN LÍNEA](../REQUISITOS%20FUNCIONALES%20Y%20NO/Requisitos%20Funcionales%20(Ampliados).md#rf-001-gestión-de-cotizaciones-en-línea)
+- [Ir a RF-002 SEGUIMIENTO DE PEDIDOS](../REQUISITOS%20FUNCIONALES%20Y%20NO/Requisitos%20Funcionales%20(Ampliados).md#rf-002-seguimiento-de-pedidos)
+- [Ir a RF-003 GESTIÓN DE BODEGA](../REQUISITOS%20FUNCIONALES%20Y%20NO/Requisitos%20Funcionales%20(Ampliados).md#rf-003-gestión-de-bodega)
+- [Ir a RF-004 ALERTAS Y SUGERENCIA DE PROVEEDORES](../REQUISITOS%20FUNCIONALES%20Y%20NO/Requisitos%20Funcionales%20(Ampliados).md#rf-004-alertas-y-sugerencia-de-proveedores)
+- [Ir a RF-005 AUTENTICACIÓN Y ROLES DE USUARIO](../REQUISITOS%20FUNCIONALES%20Y%20NO/Requisitos%20Funcionales%20(Ampliados).md#rf-005-autenticación-y-roles-de-usuario)
+- [Ir a RF-006 GESTIÓN DE PEDIDOS](../REQUISITOS%20FUNCIONALES%20Y%20NO/Requisitos%20Funcionales%20(Ampliados).md#rf-006-gestión-de-pedidos)
+- [Ir a RF-007 INFORMES Y ESTADÍSTICAS](../REQUISITOS%20FUNCIONALES%20Y%20NO/Requisitos%20Funcionales%20(Ampliados).md#rf-007-informes-y-estadísticas)
+- [Ir a RF-008 GESTIÓN DE PROVEEDORES](../REQUISITOS%20FUNCIONALES%20Y%20NO/Requisitos%20Funcionales%20(Ampliados).md#rf-008-gestión-de-proveedores)
+- [Ir a RF-009 PANEL DE ADMINISTRACIÓN](../REQUISITOS%20FUNCIONALES%20Y%20NO/Requisitos%20Funcionales%20(Ampliados).md#rf-009-panel-de-administración)
+- [Ir a RF-010 NOTIFICACIONES AL CLIENTE](../REQUISITOS%20FUNCIONALES%20Y%20NO/Requisitos%20Funcionales%20(Ampliados).md#rf-010-notificaciones-al-cliente)
+- [Ir a RF-011 HISTORIAL DE COTIZACIONES](../REQUISITOS%20FUNCIONALES%20Y%20NO/Requisitos%20Funcionales%20(Ampliados).md#rf-011-historial-de-cotizaciones)
+- [Ir a RF-012 RECUPERACIÓN DE CONTRASEÑA](../REQUISITOS%20FUNCIONALES%20Y%20NO/Requisitos%20Funcionales%20(Ampliados).md#rf-012-restablecimiento-de-contraseña)
 
 ## REQUISITOS NO FUNCIONALES
 
