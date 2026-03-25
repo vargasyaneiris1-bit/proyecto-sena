@@ -12,13 +12,15 @@
 
 **Precondiciones:** Cliente tiene acceso a la página web  
 
-**Flujo Principal:** 1\. Cliente accede a la página web de Casetech  
+**Flujo Principal:**
+1\. Cliente accede a la página web de Casetech  
 2\. Sistema presenta formulario de cotización  
 3\. Cliente ingresa tipo de material, cantidad y datos de contacto  
 4\. Sistema calcula precio automáticamente  
 5\. Sistema genera cotización y la envía al cliente por correo  
 
-**Criterios de Aceptación:** * Cotización generada sin intervención del jefe.  
+**Criterios de Aceptación:** 
+* Cotización generada sin intervención del jefe.  
 * Confirmación enviada al cliente en menos de 5 minutos.  
 * Cotización guardada en el sistema.  
 
@@ -36,11 +38,13 @@
 
 **Precondiciones:** El cliente tiene un pedido activo.  
 
-**Flujo Principal:** 1\. El cliente ingresa su número de pedido en la página web.  
+**Flujo Principal:** 
+1\. El cliente ingresa su número de pedido en la página web.  
 2\. Sistema muestra el estado actual: en producción, alistamiento o entrega.  
 3\. Sistema muestra fecha estimada de entrega.  
 
-**Criterios de Aceptación:** * Estados visibles en tiempo real.  
+**Criterios de Aceptación:** 
+* Estados visibles en tiempo real.  
 * Notificación automática al cliente cuando cambia el estado.  
 
 **Prioridad:** MUST (Crítico)
@@ -57,11 +61,13 @@
 
 **Precondiciones:** Usuario operario autenticado en el sistema.  
 
-**Flujo Principal:** 1\. Operario registra entrada o salida de material.  
+**Flujo Principal:** 
+1\. Operario registra entrada o salida de material.  
 2\. El sistema actualiza el inventario automáticamente.  
 3\. Sistema genera alerta si el stock baja del mínimo establecido.  
 
-**Criterios de Aceptación:** * Inventario actualizado en tiempo real.  
+**Criterios de Aceptación:** 
+* Inventario actualizado en tiempo real.  
 * Historial de movimientos consultables.  
 * Alertas automáticas de bajo inventario.  
 
@@ -79,12 +85,14 @@
 
 **Precondiciones:** Inventario actualizado en el sistema.  
 
-**Flujo Principal:** 1\. Sistema detecta material con stock bajo o agotado.  
+**Flujo Principal:**
+1\. Sistema detecta material con stock bajo o agotado.  
 2\. El sistema envía alerta automática al cliente.  
 3\. Sistema muestra lista de proveedores sugeridos con precio y calidad.  
 4\. Cliente selecciona proveedor de su preferencia.  
 
-**Criterios de Aceptación:** * Alerta enviada en tiempo real.  
+**Criterios de Aceptación:** 
+* Alerta enviada en tiempo real.  
 * Mínimo 3 opciones de proveedores sugeridas.  
 
 **Prioridad:** DEBE (Importante)
@@ -99,7 +107,8 @@
 
 **Actor:** Administrador, operario, cliente.  
 
-**Flujo Principal:** 1\. Usuario ingresa correo y contraseña.  
+**Flujo Principal:** 
+1\. Usuario ingresa correo y contraseña.  
 2\. Sistema valida credenciales.  
 3\. Sistema redirige al módulo correspondiente según rol.  
 
@@ -115,7 +124,8 @@
 
 **Actor:** Operario / Administrador  
 
-**Flujo Principal:** 1\. Operario crea pedido a partir de cotización aprobada.  
+**Flujo Principal:** 
+1\. Operario crea pedido a partir de cotización aprobada.  
 2\. Sistema asigna número único al pedido.  
 3\. Operario actualiza estado: producción, alistamiento, entrega.  
 4\. Sistema notifica al cliente en cada cambio de estado.  
@@ -132,7 +142,8 @@
 
 **Actor:** Administrador  
 
-**Flujo Principal:** 1\. El administrador selecciona el tipo de informe y el rango de fechas.  
+**Flujo Principal:** 
+1\. El administrador selecciona el tipo de informe y el rango de fechas.  
 2\. El sistema genera informes con los datos solicitados.  
 3\. El sistema permite exportar en PDF o Excel.  
 
@@ -148,7 +159,8 @@
 
 **Actor:** Cualquier usuario registrado  
 
-**Flujo Principal:** 1\. El usuario selecciona la opción de "olvidé mi contraseña".  
+**Flujo Principal:** 
+1\. El usuario selecciona la opción de "olvidé mi contraseña".  
 2\. Sistema solicita correo electrónico registrado.  
 3\. Sistema envía enlace de restablecimiento al correo.  
 4\. Usuario ingresa nueva contraseña.  
