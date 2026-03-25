@@ -5,7 +5,8 @@
 * **Descripción:** El sistema debe permitir que el cliente realice su cotización directamente desde la página web sin necesidad de contacto físico con el jefe.
 * **Actor:** Cliente externo
 * **Precondiciones:** Cliente tiene acceso a la página web
-* **Flujo Principal:** 1\. Cliente accede a la página web de Casetech  
+* **Flujo Principal:** 
+1\. Cliente accede a la página web de Casetech  
 2\. Sistema presenta formulario de cotización  
 3\. Cliente ingresa tipo de material, cantidad y datos de contacto  
 4\. Sistema calcula precio automáticamente  
