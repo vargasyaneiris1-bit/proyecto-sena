@@ -6,11 +6,11 @@
 * **Actor:** Cliente externo
 * **Precondiciones:** Cliente tiene acceso a la página web
 * **Flujo Principal:**
-    1. Cliente accede a la página web de Casetech
-    2. Sistema presenta formulario de cotización
-    3. Cliente ingresa tipo de material, cantidad y datos de contacto
-    4. Sistema calcula precio automáticamente
-    5. Sistema genera cotización y la envía al cliente por correo
+    1\. Cliente accede a la página web de Casetech
+    2\. Sistema presenta formulario de cotización
+    3\. Cliente ingresa tipo de material, cantidad y datos de contacto
+    4\. Sistema calcula precio automáticamente
+    5\. Sistema genera cotización y la envía al cliente por correo
 * **Criterios de Aceptación:**
     * Cotización generada sin intervención del jefe.
     * Confirmación enviada al cliente en menos de 5 minutos.
